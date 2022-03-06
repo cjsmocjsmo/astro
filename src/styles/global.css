@@ -1,4 +1,4 @@
-* {
+/* * {
 	box-sizing: border-box;
 	margin: 0;
 }
@@ -16,7 +16,7 @@ body {
 	min-height: 100vh;
 	display: grid;
 	justify-content: center;
-	background: red;
+	background: black;
 	color: #111827;
 }
 
@@ -25,4 +25,19 @@ body {
 		background: #111827;
 		color: #fff;
 	}
+} */
+body {
+	/* padding: 4rem 2rem; */
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	background: black;
+}
+
+.main {
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+
 }
