@@ -1,0 +1,64 @@
+---
+// Component Imports
+// import Tour from '../components/Tour.astro';
+// You can import components from any supported Framework here!
+import Back from '../components/BackArrow.astro';
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Dad';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<style global>
+		@import "../styles/global.css";
+		@import "../styles/home.css";
+	</style>
+
+	<style>
+		body {
+			background-color: black;
+		}
+
+		.column {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img {
+			border-radius: 17px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<Back />
+		<div class="column">
+			<a href="/d1zoom"><img src="/assets/thumbs/d1thumb2.webp" alt="fuckit" ></a>
+			<a href="/d2zoom"><img src="/assets/thumbs/d2thumb2.webp" alt="fuckit" ></a>	
+			<a href="/d4zoom"><img src="/assets/thumbs/d4thumb2.webp" alt="fuckit" ></a>
+			<a href="/d5zoom"><img src="/assets/thumbs/d5thumb2.webp" alt="fuckit" ></a>
+			<a href="/d6zoom"><img src="/assets/thumbs/d6thumb2.webp" alt="fuckit" ></a>
+			<a href="/d7zoom"><img src="/assets/thumbs/d7thumb2.webp" alt="fuckit" ></a>
+			<a href="/d8zoom"><img src="/assets/thumbs/d8thumb2.webp" alt="fuckit" ></a>
+			<a href="/d9zoom"><img src="/assets/thumbs/d9thumb2.webp" alt="fuckit" ></a>
+			<a href="/d10zoom"><img src="/assets/thumbs/d10thumb2.webp" alt="fuckit" ></a>
+		</div>
+		<Back />
+	</main>
+</body>
+</html>
